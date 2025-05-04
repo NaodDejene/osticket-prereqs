@@ -26,7 +26,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Item 2 Web browser and internet
 - Item 3 Payment method
 - Item 4 Basic setup knowledege
-- Item 5
+
 
 <h2>Installation Steps</h2>
 
@@ -34,7 +34,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-sign in to the Azure portal. In the seach type "virtual machine" and select it and then click "create" > "Azure virtual machine" </p>
+Sign in to the Azure portal. In the seach type "virtual machine" and select it and then click "create" > "Azure virtual machine" </p>
 <br />
 
 <p>
