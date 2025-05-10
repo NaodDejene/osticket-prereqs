@@ -22,30 +22,37 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1 Azure account
-- Item 2 Web browser and internet
-- Item 3 Payment method
-- Item 4 Basic setup knowledege
-
+- Item 1
+- Item 2
+- Item 3
+- Item 4
+- Item 5
 
 <h2>Installation Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/dvz59g2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Sign in to the Azure portal. In the seach type "virtual machine" and select it and then click "create" > "Azure virtual machine" </p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/TT2OPlG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Configure VM settings (subscription, resource group, Vm name, Region,Image,Authentication Type,Username,Password/SSH Key. When choosing Disks choose the OS disk type (eg.SSD) and Adjust for the disk size needed. For Networking select an existing vitual network or create your own , assign a public ip to it and configure a Network security group to allow neccesary orts like SSH or Linux. </p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/5Uxn65V.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
 </p>
 <p>
 Review and create: Review all your configurations, click "create" yo deploy the Vm, once the deploymeny is complete, click "go to resource" to acess your virtual machine </p>
