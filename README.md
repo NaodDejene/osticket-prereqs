@@ -26,79 +26,89 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-<p align="center">
-  <img src="https://i.imgur.com/Clzj7Xs.png" height="50%" width="50%" alt="Step Image"/>
-</p>
-<p>
-<b>Step 1:</b> Log in to your Microsoft Azure account. Go to the Virtual Machines section and create a new VM. Enter your subscription details, resource group, name, region, and choose a Windows 10 image and suitable size. Create an administrator username and password. Click "Review + Create" and then deploy the VM.
-</p>
-<br />
+<!-- Step 1 -->
+<p><strong>Step 1:</strong> Create an Azure VM and log in with Remote Desktop.</p>
+<img src="https://i.imgur.com/step1img1.png" alt="Step 1" width="80%" />
 
-<p align="center">
-  <img src="https://i.imgur.com/Clzj7Xs.png" height="50%" width="50%" alt="Step Image"/>
-</p>
-<p>
-<b>Step 2:</b> After deployment, access the VM's overview page to find its public IP. Use Remote Desktop (RDP) to connect to the Windows environment.
-</p>
-<br />
+<!-- Step 2 -->
+<p><strong>Step 2:</strong> Download and unzip the osTicket-Installation-Files.zip on the VM.</p>
+<img src="https://i.imgur.com/step2img1.png" alt="Step 2" width="80%" />
 
-<p align="center">
-  <img src="https://i.imgur.com/Clzj7Xs.png" height="50%" width="50%" alt="Step Image"/>
-</p>
-<p>
-<b>Step 3:</b> Open the Control Panel, go to "Programs and Features," then select "Turn Windows features on or off." Enable "Internet Information Services (IIS)" and its subcomponents. Click OK to install IIS.
-</p>
-<br />
+<!-- Step 3 -->
+<p><strong>Step 3:</strong> Install and enable IIS with CGI.</p>
+<img src="https://i.imgur.com/step3img1.png" alt="Step 3 - Part 1" width="80%" />
+<img src="https://i.imgur.com/step3img2.png" alt="Step 3 - Part 2" width="80%" />
 
-<p align="center">
-  <img src="https://i.imgur.com/Clzj7Xs.png" height="50%" width="50%" alt="Step Image"/>
-</p>
-<p>
-<b>Step 4:</b> Download PHP for Windows from the official website. Extract it to a folder (e.g., C:\PHP). In IIS Manager, add a module mapping to associate `.php` files with `php-cgi.exe`. Enable required PHP extensions in `php.ini`.
-</p>
-<br />
+<!-- Step 4 -->
+<p><strong>Step 4:</strong> Install PHP Manager for IIS.</p>
+<img src="https://i.imgur.com/step4img1.png" alt="Step 4" width="80%" />
 
-<p align="center">
-  <img src="https://i.imgur.com/Clzj7Xs.png" height="50%" width="50%" alt="Step Image"/>
-</p>
-<p>
-<b>Step 5:</b> Install MySQL Server by downloading it from the official MySQL website. Set a root password and create a new database (e.g., `osticket_db`). Also create a user and grant it privileges to access the database.
-</p>
-<br />
+<!-- Step 5 -->
+<p><strong>Step 5:</strong> Create the directory C:\PHP.</p>
+<img src="https://i.imgur.com/step5img1.png" alt="Step 5" width="80%" />
 
-<p align="center">
-  <img src="https://i.imgur.com/Clzj7Xs.png" height="50%" width="50%" alt="Step Image"/>
-</p>
-<p>
-<b>Step 6:</b> Download the latest osTicket release from the official website. Extract the contents to `C:\inetpub\wwwroot\osTicket`. Ensure the IIS user has the necessary permissions to read/write this directory.
-</p>
-<br />
+<!-- Step 6 -->
+<p><strong>Step 6:</strong> Unzip PHP and install VC_redist.</p>
+<img src="https://i.imgur.com/step6img1.png" alt="Step 6 - Unzip PHP" width="80%" />
+<img src="https://i.imgur.com/step6img2.png" alt="Step 6 - VC_redist" width="80%" />
 
-<p align="center">
-  <img src="https://i.imgur.com/Clzj7Xs.png" height="50%" width="50%" alt="Step Image"/>
-</p>
-<p>
-<b>Step 7:</b> In IIS Manager, right-click "Sites" and choose "Add Website." Assign a name, set the physical path to the osTicket folder, and choose a port (default is 80). Start the website.
-</p>
-<br />
+<!-- Step 7 -->
+<p><strong>Step 7:</strong> Install MySQL and configure with root/root.</p>
+<img src="https://i.imgur.com/step7img1.png" alt="Step 7" width="80%" />
 
-<p align="center">
-  <img src="https://i.imgur.com/Clzj7Xs.png" height="50%" width="50%" alt="Step Image"/>
-</p>
-<p>
-<b>Step 8:</b> Open your browser and navigate to the osTicket URL. Complete the setup wizard by entering helpdesk name, admin credentials, and MySQL database information. Submit the form to finish the installation.
-</p>
-<br />
+<!-- Step 8 -->
+<p><strong>Step 8:</strong> Open IIS and register PHP.</p>
+<img src="https://i.imgur.com/step8img1.png" alt="Step 8" width="80%" />
 
-<p align="center">
-  <img src="https://i.imgur.com/Clzj7Xs.png" height="50%" width="50%" alt="Step Image"/>
-</p>
-<p>
-<b>Final Setup:</b> Delete the `/setup` directory from the osTicket folder. Change the `ost-config.php` file permissions to read-only for security.
-</p>
-<br />
+<!-- Step 9 -->
+<p><strong>Step 9:</strong> Reload IIS, unzip osTicket, and rename folder.</p>
+<img src="https://i.imgur.com/step9img1.png" alt="Step 9 - IIS" width="80%" />
+<img src="https://i.imgur.com/step9img2.png" alt="Step 9 - Upload" width="80%" />
+<img src="https://i.imgur.com/step9img3.png" alt="Step 9 - Rename" width="80%" />
+<img src="https://i.imgur.com/step9img4.png" alt="Step 9 - Copy" width="80%" />
+<img src="https://i.imgur.com/step9img5.png" alt="Step 9 - Final Check 1" width="80%" />
+<img src="https://i.imgur.com/step9img6.png" alt="Step 9 - Final Check 2" width="80%" />
 
-<p>
-<b>Review and Create:</b> Review all your configurations, click "Create" to deploy the VM. Once deployment is complete, click "Go to Resource" to access your virtual machine.
-</p>
-<br />
+<!-- Step 10 -->
+<p><strong>Step 10:</strong> Reload IIS again.</p>
+<img src="https://i.imgur.com/step10img1.png" alt="Step 10 - Reload" width="80%" />
+<img src="https://i.imgur.com/step10img2.png" alt="Step 10 - Confirmation" width="80%" />
+
+<!-- Step 11 -->
+<p><strong>Step 11:</strong> Browse to osTicket in your browser.</p>
+<img src="https://i.imgur.com/step11img1.png" alt="Step 11" width="80%" />
+
+<!-- Step 12 -->
+<p><strong>Step 12:</strong> Enable required PHP extensions in PHP Manager.</p>
+<img src="https://i.imgur.com/step12img1.png" alt="Step 12 - Extensions" width="80%" />
+<img src="https://i.imgur.com/step12img2.png" alt="Step 12 - Save Changes" width="80%" />
+
+<!-- Step 13 -->
+<p><strong>Step 13:</strong> Refresh the osTicket browser page and verify.</p>
+<img src="https://i.imgur.com/step13img1.png" alt="Step 13 - Screenshot 1" width="80%" />
+<img src="https://i.imgur.com/step13img2.png" alt="Step 13 - Screenshot 2" width="80%" />
+<img src="https://i.imgur.com/step13img3.png" alt="Step 13 - Screenshot 3" width="80%" />
+<img src="https://i.imgur.com/step13img4.png" alt="Step 13 - Screenshot 4" width="80%" />
+<img src="https://i.imgur.com/step13img5.png" alt="Step 13 - Screenshot 5" width="80%" />
+<img src="https://i.imgur.com/step13img6.png" alt="Step 13 - Screenshot 6" width="80%" />
+<img src="https://i.imgur.com/step13img7.png" alt="Step 13 - Screenshot 7" width="80%" />
+<img src="https://i.imgur.com/step13img8.png" alt="Step 13 - Screenshot 8" width="80%" />
+<img src="https://i.imgur.com/step13img9.png" alt="Step 13 - Screenshot 9" width="80%" />
+
+<!-- Step 14 -->
+<p><strong>Step 14:</strong> Rename ost-config.php to enable setup.</p>
+<img src="https://i.imgur.com/step14img1.png" alt="Step 14" width="80%" />
+
+<!-- Step 15 -->
+<p><strong>Step 15:</strong> Set permissions for ost-config.php.</p>
+<img src="https://i.imgur.com/step15img1.png" alt="Step 15 - Permissions 1" width="80%" />
+<img src="https://i.imgur.com/step15img2.png" alt="Step 15 - Permissions 2" width="80%" />
+<img src="https://i.imgur.com/step15img3.png" alt="Step 15 - Permissions 3" width="80%" />
+<img src="https://i.imgur.com/step15img4.png" alt="Step 15 - Permissions 4" width="80%" />
+
+<!-- Step 16 -->
+<p><strong>Step 16:</strong> Begin final osTicket setup in browser (helpdesk name, email).</p>
+<img src="https://i.imgur.com/step16img1.png" alt="Step 16 - Helpdesk Name" width="80%" />
+<img src="https://i.imgur.com/step16img2.png" alt="Step 16 - Email Input" width="80%" />
+<img src="https://i.imgur.com/step16img3.png" alt="Step 16 - Submit Setup" width="80%" />
+
