@@ -36,77 +36,69 @@
 <h2>Installation Steps</h2>
 
 <p><strong>Step 1:</strong> Create a Windows 10 Azure VM and log in via Remote Desktop.</p>
-<p align="center">
-  <img src="https://i.imgur.com/step1img1.png" alt="Azure VM Setup"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p><strong>Step 2:</strong> Download and unzip the osTicket Installation Files to the desktop.</p>
-<p align="center">
-  <img src="https://i.imgur.com/step2img1.png" alt="Download osTicket files"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p><strong>Step 3:</strong> Install/enable IIS with CGI enabled.</p>
-<p align="center">
-  <img src="https://i.imgur.com/step3img1.png" alt="IIS Setup 1"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p align="center">
-  <img src="https://i.imgur.com/step3img2.png" alt="IIS Setup 2"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p><strong>Step 4:</strong> Install PHP Manager for IIS.</p>
-<p align="center">
-  <img src="https://i.imgur.com/step4img1.png" alt="PHP Manager Install"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p><strong>Step 5:</strong> Create directory <code>C:\PHP</code>.</p>
-<p align="center">
-  <img src="https://i.imgur.com/step5img1.png" alt="Create PHP Directory"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p><strong>Step 6:</strong> Unzip PHP and install VC_redist.x86.</p>
-<p align="center">
-  <img src="https://i.imgur.com/step6img1.png" alt="Unzip PHP"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p align="center">
-  <img src="https://i.imgur.com/step6img2.png" alt="Install VC_redist"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p><strong>Step 7:</strong> Install MySQL and set root credentials.</p>
-<p align="center">
-  <img src="https://i.imgur.com/step7img1.png" alt="MySQL Install"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p><strong>Step 8:</strong> Open IIS as Admin and register PHP.</p>
-<p align="center">
-  <img src="https://i.imgur.com/step8img1.png" alt="Register PHP in IIS"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <p><strong>Step 9:</strong> Unzip osTicket, move to IIS root, rename folder.</p>
-<p align="center">
-  <img src="https://i.imgur.com/step9img1.png" alt="Unzip osTicket"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p align="center">
-  <img src="https://i.imgur.com/step9img2.png" alt="Copy to wwwroot"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p align="center">
-  <img src="https://i.imgur.com/step9img3.png" alt="Rename Folder"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p align="center">
-  <img src="https://i.imgur.com/step9img4.png" alt="IIS View"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p align="center">
-  <img src="https://i.imgur.com/step9img5.png" alt="Step 9 Screenshot 5"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p align="center">
-  <img src="https://i.imgur.com/step9img6.png" alt="Step 9 Screenshot 6"/>
-</p>
-
-<p><strong>Step 10:</strong> Reload IIS.</p>
-<p align="center">
-  <img src="https://i.imgur.com/step10img1.png" alt="Reload IIS 1"/>
-</p>
-<p align="center">
-  <img src="https://i.imgur.com/step10img2.png" alt="Reload IIS 2"/>
+<p>
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-<!-- Continue same format for steps 11–16 -->
+<p><strong>Step 10:</strong
