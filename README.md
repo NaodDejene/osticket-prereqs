@@ -171,3 +171,19 @@
 <p>
   <img src="https://i.imgur.com/8zmGRjB.png" height="80%" width="80%" alt="osTicket DB Setup"/>
 </p>
+<p><strong>Step 17:</strong> Continue setting up osTicket in the browser.</p>
+<p>
+  MySQL Database: <code>osTicket</code><br/>
+  MySQL Username: <code>root</code><br/>
+  MySQL Password: <code>root</code><br/>
+  Click “Install Now!”
+</p>
+<p>
+  <img src="https://i.imgur.com/tAzLcJj.png" height="80%" width="80%" alt="osTicket MySQL Setup 1"/>
+</p>
+<p>
+  <img src="https://i.imgur.com/b86fYyy.png" height="80%" width="80%" alt="osTicket MySQL Setup 2"/>
+</p>
+<p>
+  <img src="https://i.imgur.com/em4Tx2f.png" height="80%" width="80%" alt="osTicket MySQL Setup 3"/>
+</p>
