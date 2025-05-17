@@ -57,133 +57,98 @@
 <p>
   <img src="https://i.imgur.com/Q8ZTRZ9.png" height="80%" width="80%" alt="PHP Manager"/>
 </p>
+<!-- Step 5 -->
+<p><strong>Step 5:</strong> From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder.</p>
+<p><img src="https://i.imgur.com/SbiOQ8P.png" width="80%" alt="Unzip PHP"/></p>
+<p><img src="https://i.imgur.com/OL038XQ.png" width="80%" alt="C PHP Directory"/></p>
 
-<p><strong>Step 5:</strong> Create directory <code>C:\PHP</code>.</p>
-<p>
-  <img src="https://i.imgur.com/HnDcKy7.png" height="80%" width="80%" alt="Create PHP Directory"/>
-</p>
+<!-- Step 6 -->
+<p><strong>Step 6:</strong> From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.</p>
+<p><img src="https://i.imgur.com/ODvFju4.png" width="80%" alt="Install VC Redist"/></p>
 
-<p><strong>Step 6:</strong> Unzip PHP and install VC_redist.x86.</p>
-<p>
-  <img src="https://i.imgur.com/P33mH0n.png" height="80%" width="80%" alt="Unzip PHP"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/SbiOQ8P.png" height="80%" width="80%" alt="Install VC Redist"/>
-</p>
+<!-- Step 7 -->
+<p><strong>Step 7:</strong> From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi).<br>
+Use Typical Setup → Launch Configuration Wizard → Standard Configuration.<br>
+Username: <code>root</code> | Password: <code>root</code></p>
+<p><img src="https://i.imgur.com/yRz3nQZ.png" width="80%" alt="Install MySQL"/></p>
 
-<p><strong>Step 7:</strong> Install MySQL and set root credentials.</p>
-<p>
-  <img src="https://i.imgur.com/OL038XQ.png" height="80%" width="80%" alt="Install MySQL"/>
-</p>
+<!-- Step 8 -->
+<p><strong>Step 8:</strong> Open IIS as Administrator. Register PHP from within IIS (PHP Manager → C:\PHP\php-cgi.exe), then reload IIS (Stop/Start).</p>
+<p><img src="https://i.imgur.com/yrb3c8f.png" width="80%" alt="IIS Admin"/></p>
+<p><img src="https://i.imgur.com/0Bnf3aS.png" width="80%" alt="Register PHP"/></p>
+<p><img src="https://i.imgur.com/jj8M3WX.png" width="80%" alt="PHP Path"/></p>
+<p><img src="https://i.imgur.com/xKRQG2r.png" width="80%" alt="Reload IIS"/></p>
+<p><img src="https://i.imgur.com/hbbVv1o.png" width="80%" alt="IIS View"/></p>
 
-<p><strong>Step 8:</strong> Open IIS as Admin and register PHP.</p>
-<p>
-  <img src="https://i.imgur.com/ODvFju4.png" height="80%" width="80%" alt="Register PHP in IIS"/>
-</p>
+<!-- Step 9 -->
+<p><strong>Step 9:</strong> From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip”.<br>
+Copy the “upload” folder into <code>c:\inetpub\wwwroot</code> and rename it to “osTicket”.</p>
+<p><img src="https://i.imgur.com/a0l4CuL.png" width="80%" alt="Unzip osTicket"/></p>
+<p><img src="https://i.imgur.com/SNfYXZe.png" width="80%" alt="Copy Upload Folder"/></p>
+<p><img src="https://i.imgur.com/7c60jb8.png" width="80%" alt="Rename to osTicket"/></p>
 
-<p><strong>Step 9:</strong> Unzip osTicket, move to IIS root, rename folder.</p>
-<p>
-  <img src="https://i.imgur.com/yRz3nQZ.png" height="80%" width="80%" alt="Unzip osTicket"/>
-</p>
-<p>
-  <img src="https://imgur.com/3fe816bc-7ff9-4d81-9d6c-a2f3180d4696.png" height="80%" width="80%" alt="Move osTicket"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/yrb3c8f.png" height="80%" width="80%" alt="Rename osTicket Folder"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/0Bnf3aS.png" height="80%" width="80%" alt="osTicket Directory"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/jj8M3WX.png" height="80%" width="80%" alt="IIS Setup"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/xKRQG2r.png" height="80%" width="80%" alt="Permissions Setup"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/hbbVv1o.png" height="80%" width="80%" alt="IIS Folder Structure"/>
-</p>
+<!-- Step 10 -->
+<p><strong>Step 10:</strong> Reload IIS (Stop and Start the server again).</p>
+<p><img src="https://i.imgur.com/1QqLJCa.png" width="80%" alt="Reload IIS"/></p>
+<p><img src="https://i.imgur.com/rzn1O0r.png" width="80%" alt="Reload View"/></p>
 
-<p><strong>Step 10:</strong> (Image missing or not specified)</p>
+<!-- Step 11 -->
+<p><strong>Step 11:</strong> In IIS, go to Sites → Default Web Site → osTicket. On the right, click “Browse *:80”.</p>
+<p><img src="https://i.imgur.com/X74UvNz.png" width="80%" alt="Browse osTicket"/></p>
 
-<p><strong>Step 11:</strong> Browse osTicket site from IIS.</p>
-<p>
-  <img src="https://i.imgur.com/SNfYXZe.png" height="80%" width="80%" alt="Browse osTicket"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/7c60jb8.png" height="80%" width="80%" alt="osTicket Welcome"/>
-</p>
+<!-- Step 12 -->
+<p><strong>Step 12:</strong> If PHP extensions are missing, enable them:</p>
+<ul>
+  <li>In IIS, double-click PHP Manager</li>
+  <li>Click “Enable or disable an extension”</li>
+  <li>Enable: <code>php_imap.dll</code>, <code>php_intl.dll</code>, <code>php_opcache.dll</code></li>
+</ul>
+<p>Refresh the osTicket browser page.</p>
+<p><img src="https://i.imgur.com/UWNBtqk.png" width="80%" alt="Enable Extensions"/></p>
+<p><img src="https://i.imgur.com/t7yzcCz.png" width="80%" alt="PHP Extensions"/></p>
 
-<p><strong>Step 12:</strong> Enable required PHP extensions (imap, intl, opcache).</p>
-<p>
-  <img src="https://i.imgur.com/1QqLJCa.png" height="80%" width="80%" alt="Enable PHP Extensions"/>
-</p>
+<!-- Step 13 -->
+<p><strong>Step 13:</strong> Rename and configure the config file:</p>
+<ul>
+  <li>Rename: <code>ost-sampleconfig.php</code> → <code>ost-config.php</code></li>
+  <li>Path: <code>C:\inetpub\wwwroot\osTicket\include</code></li>
+  <li>Disable inheritance → Remove all permissions</li>
+  <li>Add permission: Everyone → Full Control</li>
+</ul>
+<p><img src="https://i.imgur.com/jcYkMoe.png" width="80%" alt="Rename Config"/></p>
+<p><img src="https://i.imgur.com/Dq2Wm5q.png" width="80%" alt="Permission 1"/></p>
+<p><img src="https://i.imgur.com/xhGzW9y.png" width="80%" alt="Permission 2"/></p>
+<p><img src="https://i.imgur.com/9sDdDua.png" width="80%" alt="Permission 3"/></p>
+<p><img src="https://i.imgur.com/4gDoxXU.png" width="80%" alt="Permission 4"/></p>
+<p><img src="https://i.imgur.com/6wQ6vyK.png" width="80%" alt="Permission 5"/></p>
+<p><img src="https://i.imgur.com/TGq3ahs.png" width="80%" alt="Permission 6"/></p>
+<p><img src="https://i.imgur.com/AZzbIYs.png" width="80%" alt="Permission 7"/></p>
+<p><img src="https://i.imgur.com/IrbMD39.png" width="80%" alt="Permission 8"/></p>
 
-<p><strong>Step 13:</strong> Refresh osTicket site and rename config file.</p>
-<p>
-  <img src="https://i.imgur.com/rzn1O0r.png" height="80%" width="80%" alt="Rename Config"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/X74UvNz.png" height="80%" width="80%" alt="Refresh osTicket"/>
-</p>
+<!-- Step 14 -->
+<p><strong>Step 14:</strong> Continue osTicket setup in the browser. Set your Helpdesk name and default email (where customer messages go).</p>
+<p><img src="https://i.imgur.com/nJNCgsO.png" width="80%" alt="Helpdesk Config"/></p>
 
-<p><strong>Step 14:</strong> Assign file permissions to ost-config.php.</p>
-<p>
-  <img src="https://i.imgur.com/UWNBtqk.png" height="80%" width="80%" alt="Permissions 1"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/t7yzcCz.png" height="80%" width="80%" alt="Permissions 2"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/jcYkMoe.png" height="80%" width="80%" alt="Permissions 3"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/Dq2Wm5q.png" height="80%" width="80%" alt="Permissions 4"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/xhGzW9y.png" height="80%" width="80%" alt="Permissions 5"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/9sDdDua.png" height="80%" width="80%" alt="Permissions 6"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/4gDoxXU.png" height="80%" width="80%" alt="Permissions 7"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/6wQ6vyK.png" height="80%" width="80%" alt="Permissions 8"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/TGq3ahs.png" height="80%" width="80%" alt="Permissions 9"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/AZzbIYs.png" height="80%" width="80%" alt="Permissions 10"/>
-</p>
+<!-- Step 15 -->
+<p><strong>Step 15:</strong> Install HeidiSQL.</p>
+<ul>
+  <li>Open HeidiSQL</li>
+  <li>Create new session with username: <code>root</code> and password: <code>root</code></li>
+  <li>Create a database called <code>osTicket</code></li>
+</ul>
+<p><img src="https://i.imgur.com/8zmGRjB.png" width="80%" alt="HeidiSQL 1"/></p>
+<p><img src="https://i.imgur.com/7T9AyE4.png" width="80%" alt="HeidiSQL 2"/></p>
+<p><img src="https://i.imgur.com/pBSkf1j.png" width="80%" alt="HeidiSQL 3"/></p>
+<p><img src="https://i.imgur.com/LEonddO.png" width="80%" alt="HeidiSQL 4"/></p>
 
-<p><strong>Step 15:</strong> Continue browser setup with helpdesk name and default email.</p>
-<p>
-  <img src="https://i.imgur.com/IrbMD39.png" height="80%" width="80%" alt="Helpdesk Setup"/>
-</p>
-
-<p><strong>Step 16:</strong> Install HeidiSQL, create DB session, and install osTicket.</p>
-<p>
-  <img src="https://i.imgur.com/nJNCgsO.png" height="80%" width="80%" alt="HeidiSQL Setup"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/8zmGRjB.png" height="80%" width="80%" alt="osTicket DB Setup"/>
-</p>
-<p><strong>Step 17:</strong> Continue setting up osTicket in the browser.</p>
-<p>
-  MySQL Database: <code>osTicket</code><br/>
-  MySQL Username: <code>root</code><br/>
-  MySQL Password: <code>root</code><br/>
-  Click “Install Now!”
-</p>
-<p>
-  <img src="https://i.imgur.com/tAzLcJj.png" height="80%" width="80%" alt="osTicket MySQL Setup 1"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/b86fYyy.png" height="80%" width="80%" alt="osTicket MySQL Setup 2"/>
-</p>
-<p>
-  <img src="https://i.imgur.com/em4Tx2f.png" height="80%" width="80%" alt="osTicket MySQL Setup 3"/>
-</p>
+<!-- Step 16 -->
+<p><strong>Step 16:</strong> Continue setup in the browser:</p>
+<ul>
+  <li>MySQL Database: <code>osTicket</code></li>
+  <li>Username: <code>root</code></li>
+  <li>Password: <code>root</code></li>
+  <li>Click “Install Now!”</li>
+</ul>
+<p><img src="https://i.imgur.com/tAzLcJj.png" width="80%" alt="osTicket DB Setup 1"/></p>
+<p><img src="https://i.imgur.com/b86fYyy.png" width="80%" alt="osTicket DB Setup 2"/></p>
+<p><img src="https://i.imgur.com/em4Tx2f.png" width="80%" alt="osTicket DB Setup 3"/></p>
