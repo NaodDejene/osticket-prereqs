@@ -35,17 +35,17 @@
 
 <h2>Installation Steps</h2>
 
-<p><strong>Step 1:</strong> Create a Windows 10 Azure VM and log in via Remote Desktop.</p>
+<p><strong>Step 1:</strong> Create a Windows 10 Azure VM and log in to it via Remote Desktop.</p>
 <p>
   <img src="https://imgur.com/JPFRNYh.png" height="80%" width="80%" alt="Azure VM Setup"/>
 </p>
 
-<p><strong>Step 2:</strong> Download and unzip the osTicket Installation Files to the desktop.</p>
+<p><strong>Step 2:</strong> Download and unzip the osTicket Installation Files to your desktop.</p>
 <p>
   <img src="https://imgur.com/Lvv6deU.png" height="80%" width="80%" alt="Download osTicket"/>
 </p>
 
-<p><strong>Step 3:</strong> Install/enable IIS with CGI enabled.</p>
+<p><strong>Step 3:</strong> enable IIS along with CGI enabled.</p>
 <p>
   <img src="https://i.imgur.com/aiTDfNa.png" height="80%" width="80%" alt="Enable IIS"/>
 </p>
@@ -63,17 +63,17 @@
 <p><img src="https://i.imgur.com/OL038XQ.png" width="80%" alt="C PHP Directory"/></p>
 
 <!-- Step 6 -->
-<p><strong>Step 6:</strong> From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.</p>
+<p><strong>Step 6:</strong> From the “osTicket-Installation-Files” folder, install the VC_redist.x86.exe.</p>
 <p><img src="https://i.imgur.com/ODvFju4.png" width="80%" alt="Install VC Redist"/></p>
 
 <!-- Step 7 -->
-<p><strong>Step 7:</strong> From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi).<br>
-Use Typical Setup → Launch Configuration Wizard → Standard Configuration.<br>
+<p><strong>Step 7:</strong> From the “osTicket-Installation-Files” folder, install MySQL verssion 5.5.62 (mysql-5.5.62-win32.msi).<br>
+Use Typical Setup and  then Launch Configuration Wizard and then Standard Configuration.<br>
 Username: <code>root</code> | Password: <code>root</code></p>
 <p><img src="https://i.imgur.com/yRz3nQZ.png" width="80%" alt="Install MySQL"/></p>
 
 <!-- Step 8 -->
-<p><strong>Step 8:</strong> Open IIS as Administrator. Register PHP from within IIS (PHP Manager → C:\PHP\php-cgi.exe), then reload IIS (Stop/Start).</p>
+<p><strong>Step 8:</strong> Open IIS as an Administrator. Register PHP from within IIS  (PHP Manager → C:\PHP\php-cgi.exe), then reload IIS (Stop/Start).</p>
 <p><img src="https://i.imgur.com/yrb3c8f.png" width="80%" alt="IIS Admin"/></p>
 <p><img src="https://i.imgur.com/0Bnf3aS.png" width="80%" alt="Register PHP"/></p>
 <p><img src="https://i.imgur.com/jj8M3WX.png" width="80%" alt="PHP Path"/></p>
@@ -81,34 +81,34 @@ Username: <code>root</code> | Password: <code>root</code></p>
 <p><img src="https://i.imgur.com/hbbVv1o.png" width="80%" alt="IIS View"/></p>
 
 <!-- Step 9 -->
-<p><strong>Step 9:</strong> From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip”.<br>
+<p><strong>Step 9:</strong> From the “osTicket-Installation-Files” folder, unzip the one that says “osTicket-v1.15.8.zip”.<br>
 Copy the “upload” folder into <code>c:\inetpub\wwwroot</code> and rename it to “osTicket”.</p>
 <p><img src="https://i.imgur.com/a0l4CuL.png" width="80%" alt="Unzip osTicket"/></p>
 <p><img src="https://i.imgur.com/SNfYXZe.png" width="80%" alt="Copy Upload Folder"/></p>
 <p><img src="https://i.imgur.com/7c60jb8.png" width="80%" alt="Rename to osTicket"/></p>
 
 <!-- Step 10 -->
-<p><strong>Step 10:</strong> Reload IIS (Stop and Start the server again).</p>
+<p><strong>Step 10:</strong> Reload the IIS (Stop and Start the server again).</p>
 <p><img src="https://i.imgur.com/1QqLJCa.png" width="80%" alt="Reload IIS"/></p>
 <p><img src="https://i.imgur.com/rzn1O0r.png" width="80%" alt="Reload View"/></p>
 
 <!-- Step 11 -->
-<p><strong>Step 11:</strong> In IIS, go to Sites → Default Web Site → osTicket. On the right, click “Browse *:80”.</p>
+<p><strong>Step 11:</strong> In IIS, go to Sites ad Default Web Site  and then osTicket.And On the right click “Browse *:80”.</p>
 <p><img src="https://i.imgur.com/X74UvNz.png" width="80%" alt="Browse osTicket"/></p>
 
 <!-- Step 12 -->
-<p><strong>Step 12:</strong> If PHP extensions are missing, enable them:</p>
+<p><strong>Step 12:</strong> If any of PHP extensions are missing, enable them:</p>
 <ul>
   <li>In IIS, double-click PHP Manager</li>
   <li>Click “Enable or disable an extension”</li>
   <li>Enable: <code>php_imap.dll</code>, <code>php_intl.dll</code>, <code>php_opcache.dll</code></li>
 </ul>
-<p>Refresh the osTicket browser page.</p>
+<p>Refresh osTicket browser page.</p>
 <p><img src="https://i.imgur.com/UWNBtqk.png" width="80%" alt="Enable Extensions"/></p>
 <p><img src="https://i.imgur.com/t7yzcCz.png" width="80%" alt="PHP Extensions"/></p>
 
 <!-- Step 13 -->
-<p><strong>Step 13:</strong> Rename and configure the config file:</p>
+<p><strong>Step 13:</strong> Make sure that you Rename and configure the config file:</p>
 <ul>
   <li>Rename: <code>ost-sampleconfig.php</code> → <code>ost-config.php</code></li>
   <li>Path: <code>C:\inetpub\wwwroot\osTicket\include</code></li>
@@ -126,14 +126,14 @@ Copy the “upload” folder into <code>c:\inetpub\wwwroot</code> and rename it 
 <p><img src="https://i.imgur.com/IrbMD39.png" width="80%" alt="Permission 8"/></p>
 
 <!-- Step 14 -->
-<p><strong>Step 14:</strong> Continue osTicket setup in the browser. Set your Helpdesk name and default email (where customer messages go).</p>
+<p><strong>Step 14:</strong> Now you want to Continue to the  osTicket setup in the browser. Set your Helpdesk name and your default email (this is where customer messages go).</p>
 <p><img src="https://i.imgur.com/nJNCgsO.png" width="80%" alt="Helpdesk Config"/></p>
 
 <!-- Step 15 -->
 <p><strong>Step 15:</strong> Install HeidiSQL.</p>
 <ul>
   <li>Open HeidiSQL</li>
-  <li>Create new session with username: <code>root</code> and password: <code>root</code></li>
+  <li>Create new session with the username: <code>root</code> and password: <code>root</code></li>
   <li>Create a database called <code>osTicket</code></li>
 </ul>
 <p><img src="https://i.imgur.com/8zmGRjB.png" width="80%" alt="HeidiSQL 1"/></p>
